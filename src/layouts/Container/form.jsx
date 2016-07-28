@@ -1,38 +1,26 @@
-import React, { Component, PropTypes } from 'react';
-import { Form, Input, Button, Checkbox } from 'antd';
+import React, {Component, PropTypes} from 'react';
+import {Form, Input, Button, Checkbox} from 'antd';
 const FormItem = Form.Item;
 console.log(1232)
 let Demo = React.createClass({
   handleSubmit(e) {
     e.preventDefault();
-    console.log('收到表单值：', this.props.form.getFieldsValue());
+    console.log('收到表单值：', 'asdas');
   },
 
   render() {
-    const { getFieldProps } = this.props.form;
     return (
       <Form inline onSubmit={this.handleSubmit}>
-        <FormItem
-          label="账户"
-        >
-          <Input placeholder="请输入账户名"
-            {...getFieldProps('userName')}
-          />
+        <FormItem label="姓名">
+          <Input placeholder="请输入账户名"/>
         </FormItem>
-        <FormItem
-          label="密码"
-        >
-          <Input type="password" placeholder="请输入密码"
-            {...getFieldProps('password')}
-          />
+        <FormItem label="帐号">
+          <Input type="text" placeholder="请输入账户"/>
         </FormItem>
-        <FormItem>
-          <Checkbox {...getFieldProps('agreement')}>记住我</Checkbox>
-        </FormItem>
-        <Button type="primary" htmlType="submit">登录</Button>
+        <Button type="primary" htmlType="submit">查询</Button>
       </Form>
     );
-  },
+  }
 });
 
 // Demo = Form.create()(Demo);

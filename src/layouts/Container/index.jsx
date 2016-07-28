@@ -15,7 +15,12 @@ const Layout_container = ({children}) => {
           </Breadcrumb>
         </div>
         <div className="con-body">
-
+          <div className="bd-header">
+            <Form />
+          </div>
+          <div className="bd-content">
+            <Table />
+          </div>
         </div>
       </div>
     );
