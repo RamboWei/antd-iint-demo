@@ -26,7 +26,6 @@ const Prat_aside = React.createClass({
     const renderMenu = () => {
       return _MenuData.map((_item, _index) => {
         const _subItems = _item.subItems.map((_subItem, subIndex) => {
-          console.log(_subItem.a_path)
           return (
             <Menu.Item key={_index + "_" + subIndex}>
               <a href={_subItem.a_path}>{_subItem.title}</a>
@@ -34,11 +33,11 @@ const Prat_aside = React.createClass({
           );
         });
         return (
-          <SubMenu key={_item.icon} title={< span >
+          <SubMenu key={_item.icon} title={
+            <span >
             <Icon type={_item.icon}/>
-            < b className = "title-text" > {
-            _item.title
-          } < /b> < /span >}>
+            <b className = "title-text" > {_item.title} </b> </span>
+          }>
             {_subItems}
           </SubMenu>
         );

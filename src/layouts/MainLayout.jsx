@@ -13,8 +13,7 @@ const MainLayout = React.createClass({
       <div className="layout-wrapper">
         <Part_aside />
         <Part_header />
-        <Part_container>
-        </Part_container>
+        <Part_container children={this.props.children} />
         <Part_footer />
       </div>
     );

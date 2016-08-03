@@ -1,7 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import {Form, Input, Button, Checkbox} from 'antd';
 const FormItem = Form.Item;
-console.log(1232)
 let Demo = React.createClass({
   handleSubmit(e) {
     e.preventDefault();
@@ -10,7 +9,7 @@ let Demo = React.createClass({
 
   render() {
     return (
-      <Form inline onSubmit={this.handleSubmit}>
+      <Form onSubmit={this.handleSubmit}>
         <FormItem label="姓名">
           <Input placeholder="请输入账户名"/>
         </FormItem>

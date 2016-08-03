@@ -7,7 +7,6 @@ const Part_footer = () => {
     );
 };
 Part_footer.PropTypes = {
-
 };
 
 export default Part_footer;

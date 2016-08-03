@@ -1,27 +1,12 @@
 import React, { Component, PropTypes } from 'react';
-import {Breadcrumb} from 'antd';
-
-import Form from '../../components/form';
-import Table from '../../components/table';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const Part_container = ({children}) => {
+  let data = ['shouye', 'yongyong', 'mou']
     return (
       <div className="layout-container">
-        <div className="con-breadcrumb">
-          <Breadcrumb>
-            <Breadcrumb.Item>首页</Breadcrumb.Item>
-            <Breadcrumb.Item>应用列表</Breadcrumb.Item>
-            <Breadcrumb.Item>某应用</Breadcrumb.Item>
-          </Breadcrumb>
-        </div>
-        <div className="con-body">
-          <div className="bd-header">
-            <Form />
-          </div>
-          <div className="bd-content">
-            <Table />
-          </div>
-        </div>
+        <Breadcrumb data={data}/>
+        {children}
       </div>
     );
 };
