@@ -1,10 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import {Breadcrumb} from 'antd';
 
-import Form from './form';
-import Table from './table';
+import Form from '../../components/form';
+import Table from '../../components/table';
 
-const Layout_container = ({children}) => {
+const Part_container = ({children}) => {
     return (
       <div className="layout-container">
         <div className="con-breadcrumb">
@@ -25,7 +25,7 @@ const Layout_container = ({children}) => {
       </div>
     );
 };
-Layout_container.PropTypes = {
+Part_container.PropTypes = {
 };
 
-export default Layout_container;
+export default Part_container;

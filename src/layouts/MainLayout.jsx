@@ -1,22 +1,21 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-//layout
-import Layout_aside from './Aside/index';
-import Layout_header from './Header/index';
-import Layout_container from './Container/index';
-import Layout_footer from './footer/index';
+//Part
+import Part_aside from './particals/Aside';
+import Part_header from './particals/Header';
+import Part_container from './particals/Container';
+import Part_footer from './particals/footer';
 //
 
 const MainLayout = React.createClass({
   render() {
     return (
       <div className="layout-wrapper">
-        <Layout_header></Layout_header>
-        <Layout_aside></Layout_aside>
-        <Layout_container>
-          123
-        </Layout_container>
-        <Layout_footer></Layout_footer>
+        <Part_aside />
+        <Part_header />
+        <Part_container>
+        </Part_container>
+        <Part_footer />
       </div>
     );
   }

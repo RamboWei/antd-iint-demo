@@ -4,7 +4,7 @@ import {Menu, Icon} from 'antd';
 import _MenuData from './MenuData';
 const SubMenu = Menu.SubMenu;
 
-const Layout_aside = React.createClass({
+const Prat_aside = React.createClass({
   getInitialState() {
     return {
       collapse: false,
@@ -61,6 +61,6 @@ const Layout_aside = React.createClass({
     );
   }
 });
-Layout_aside.PropTypes = {};
+Prat_aside.PropTypes = {};
 
-export default Layout_aside;
+export default Prat_aside;

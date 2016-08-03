@@ -3,6 +3,7 @@
 
 const webpack = require('atool-build/lib/webpack');
 const fs = require('fs');
+const join = require('path').join;
 const path = require('path');
 const glob = require('glob');
 
@@ -36,6 +37,6 @@ module.exports = function (webpackConfig) {
     return memo;
   }, {});
   webpackConfig.entry = Object.assign({}, webpackConfig.entry, newEntries);
-
+  webpackConfig.output.path = join(process.cwd(), './web/');
   return webpackConfig;
 };

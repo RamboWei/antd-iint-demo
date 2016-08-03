@@ -1,12 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 
-const Layout_header = () => {
+const Part_header = () => {
     return (
       <div className="layout-header"></div>
     );
 };
-Layout_header.PropTypes = {
+Part_header.PropTypes = {
 
 };
 
-export default Layout_header;
+export default Part_header;
